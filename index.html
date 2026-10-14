@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お金｜まとめノート</title>
+<meta name="description" content="お金を増やすことと、お金に心を支配されることは、別の問題。お金の位置づけ、欲とのほどよい距離、使う・貯める・守るときの考え方をまとめた、お金との付き合い方の個人的なノート。投資や金融商品を勧めるものではありません。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#f6f5f1;--surface:#fff;--ink:#24231f;--muted:#66625a;--faint:#9d988e;--line:#e3dfd6;--accent:#9a7432;--wash:#f4efe4}
+  @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#131516;--surface:#1b1e20;--ink:#e9eae6;--muted:#a9aca6;--faint:#6b6f6b;--line:#2b2f31;--accent:#dcb978;--wash:#272116}}
+  :root[data-theme="dark"]{--bg:#131516;--surface:#1b1e20;--ink:#e9eae6;--muted:#a9aca6;--faint:#6b6f6b;--line:#2b2f31;--accent:#dcb978;--wash:#272116}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.95 "Noto Sans JP",sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:44rem;margin:auto;padding:0 16px} @media(min-width:640px){.wrap{padding:0 24px}}
+  a{color:inherit}
+  .top{padding-top:24px}
+  .back{font-size:.75rem;color:var(--muted);text-decoration:none}.back:hover{color:var(--ink)}
+
+  header{padding:68px 0 44px;border-bottom:1px solid var(--line)}
+  .kicker{margin:0 0 16px;font-size:.7rem;letter-spacing:.24em;color:var(--accent);font-weight:700}
+  h1{font:600 clamp(2rem,5.6vw,3rem)/1.45 "Noto Serif JP",serif;margin:0 0 6px;letter-spacing:.04em}
+  .mn-tagline{font-family:"Noto Serif JP",serif;font-weight:500;font-size:clamp(1.05rem,2.6vw,1.4rem);line-height:1.75;margin:.1em 0 1.1em;opacity:.85}
+  .lead{margin:0;max-width:34em;color:var(--muted)}
+  .toc{display:flex;flex-wrap:wrap;gap:6px 16px;margin:24px 0 0;padding:0;list-style:none;font-size:.82rem}
+  .toc a{color:var(--accent);text-decoration:none}
+
+  section{padding:50px 0;border-bottom:1px solid var(--line)}
+  .sec-n{display:block;font-size:.7rem;letter-spacing:.2em;color:var(--accent);font-weight:700;margin-bottom:6px}
+  h2{font:600 1.5rem/1.5 "Noto Serif JP",serif;margin:0 0 16px;letter-spacing:.03em}
+  h3{font:600 1.08rem/1.6 "Noto Serif JP",serif;margin:28px 0 10px}
+  p{margin:0 0 16px}
+  .pull{margin:22px 0;padding:4px 0 4px 18px;border-left:2px solid var(--accent);font:500 1.12rem/1.8 "Noto Serif JP",serif}
+
+  ul.points{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px}
+  ul.points li{padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:4px;font-size:.94rem}
+  ul.points b{display:block;font-family:"Noto Serif JP",serif;font-weight:600;margin-bottom:2px}
+  ul.points span{color:var(--muted)}
+
+  .pair{display:grid;grid-template-columns:1fr;gap:12px;margin:16px 0}
+  @media(min-width:640px){.pair{grid-template-columns:1fr 1fr}}
+  .pair div{padding:16px 18px;border:1px solid var(--line);border-radius:4px;background:var(--surface)}
+  .pair h4{margin:0 0 4px;font-size:.72rem;letter-spacing:.16em;color:var(--accent)}
+  .pair p{margin:0;font-size:.92rem;color:var(--muted)}
+
+  .note{padding:26px;background:var(--wash);border-radius:4px}
+  .note h2{font-size:1.24rem}
+  .note ul{margin:12px 0 0;padding-left:1.2em}
+  .note li{margin:0 0 9px}
+
+  .src{border-top:1px solid var(--line);margin-top:16px}
+  .src a{display:flex;justify-content:space-between;gap:14px;padding:10px 2px;border-bottom:1px solid var(--line);text-decoration:none;font-size:.92rem}
+  .src a:hover{color:var(--accent)}
+  .src small{color:var(--faint);font-size:.76rem;white-space:nowrap}
+
+  footer{padding:34px 0 60px;color:var(--faint);font-size:.76rem}
+  footer .related{color:var(--muted);font-size:.86rem;margin-bottom:16px}
+  footer .related a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top"><a class="back" href="../">← m-note トップ</a></div>
+  <header>
+    <p class="kicker">MONEY</p>
+    <h1>お金</h1>
+    <p class="mn-tagline">お金を増やすことと、お金に心を支配されることは、別の問題。</p>
+    <p class="lead">お金は大切。経済的な安心がなければ、自由な暮らしも続けられない。けれど、お金を増やすこと自体が人生の目的にすり替わることは望まない。お金を手段として上手に扱いながら、自分の安心や幸福までお金に委ねないための、付き合い方のノートです。</p>
+    <ul class="toc">
+      <li><a href="#place">お金の位置づけ</a></li>
+      <li><a href="#desire">欲と、ほどよい距離</a></li>
+      <li><a href="#spend">使う</a></li>
+      <li><a href="#grow">貯める・増やす</a></li>
+      <li><a href="#keep">守る・引き継ぐ</a></li>
+      <li><a href="#open">まだ確かめていること</a></li>
+    </ul>
+  </header>
+
+  <section id="place">
+    <span class="sec-n">01</span>
+    <h2>お金の位置づけ</h2>
+    <p class="pull">お金は目的ではなく、自由な暮らしを支える手段。</p>
+    <p><a href="../way-of-life/">生き方</a>で決めたのは、自分の意思で自由に生き、世界を知る楽しさと豊かな体験を味わうこと。お金は、そのための時間と安心を支えるものです。</p>
+    <p>将来は<a href="../way-of-working/">働く時間を減らし</a>、週3日ほどの勤務でも今と同じくらいの暮らしを保ちたい。そのために資産形成も考える。ただし、どれだけ増やすかより、何のために必要なのかを先に置きます。</p>
+  </section>
+
+  <section id="desire">
+    <span class="sec-n">02</span>
+    <h2>欲と、ほどよい距離</h2>
+    <p class="pull">「もっと」を追い求める力と、「もう十分」と感じられる力。その両方を持つ。</p>
+    <p>欲そのものは悪くない。「もっと」という気持ちは、学ぶ・作る・挑戦するためのエネルギーにもなる。苦しみにつながるのは、欲に心を支配されたとき。追い求め続けたり、失うことを恐れすぎたり、しがみついたりするときです。</p>
+    <ul class="points">
+      <li><b>欲を消すのではなく、距離を変える</b><span>欲は欲として認識し、それに心を支配されない。お金を目的や手段として扱うことはできても、安心や幸福そのものをお金に委ねない。</span></li>
+      <li><b>「欲しい」と「絶対に必要」は違う</b><span>望むことと、つかんで離さないことを分ける。「私は○○を持っていなければ」ではなく、「私はいま○○を望んでいる」と言い換えると、少し離れて眺められる。</span></li>
+      <li><b>一歩引いて問う</b><span>いまの自分に何が足りないのか。本当に必要なのか。そう問える余白を残しておく。</span></li>
+    </ul>
+  </section>
+
+  <section id="spend">
+    <span class="sec-n">03</span>
+    <h2>使う</h2>
+    <p class="pull">何を買うかより、それで何が変わるか。</p>
+    <ul class="points">
+      <li><b>思い出を買う</b><span>挑戦している誰かを応援するためにお金を使うのは、消費というより、人生の思い出を買う感覚に近い。応援が共有の感覚になり、思い出になり、自分の次の挑戦への刺激になる。</span></li>
+      <li><b>減らすのではなく、使い切る</b><span>サブスクが多いことが問題なのではなく、価値を引き出せていないことが問題だった。「何回使ったか」ではなく、「それで何ができるようになったか」で価値を測る。</span></li>
+      <li><b>表示価格ではなく、総額で比べる</b><span>安く見えても、付け足すものや移動まで含めると差が縮まることがある。最後にいくらかかるかで比べる。</span></li>
+      <li><b>物と体験のバランス</b><span>物を減らして心地よく暮らしたい一方で、旅や体験にはお金を使いたい。その配分は、<a href="../joy/">楽しみ方</a>に並べたやりたいことと一緒に考えていく。</span></li>
+    </ul>
+  </section>
+
+  <section id="grow">
+    <span class="sec-n">04</span>
+    <h2>貯める・増やす</h2>
+    <p class="pull">割安さは入口であって、判断そのものではない。</p>
+    <p>ここに書くのは具体的な方法ではなく、考えるときの姿勢だけです。</p>
+    <ul class="points">
+      <li><b>普段の支出を、仕組みにする</b><span>特別なことをしなくても、毎日の支払いの流れを少し整えるだけで、旅の費用のように返ってくるものがある。まだ仕組みにしていないこと自体が、いちばんの伸びしろだった。</span></li>
+      <li><b>持っているだけでは、価値にならない</b><span>数字の上で安く見えても、その資産を活かす意志がなければ、価値として認められないことがある。安いことには、安いなりの理由がある。</span></li>
+      <li><b>前提を外に出す</b><span>どれだけ増えるかの計算より、そこに入れる見込みのほうが難しい。<a href="../thinking/#decide">期待値で決める</a>ときと同じく、自分の前提を数字で外に出して確かめる。</span></li>
+      <li><b>深追いしない</b><span>お金を増やす話は、考え始めると止まらなくなる。お金に囚われないために、ほどほどのところで手放す。</span></li>
+    </ul>
+  </section>
+
+  <section id="keep">
+    <span class="sec-n">05</span>
+    <h2>守る・引き継ぐ</h2>
+    <p>ネットの銀行や証券には、紙の通帳も郵便も届かない。持っているものが増えるほど、本人しかその場所を知らない状態はリスクになる。</p>
+    <ul class="points">
+      <li><b>「どこに何があるか」を残す</b><span>万が一のとき、家族が分かるように、口座や契約の場所だけを整理しておく。</span></li>
+      <li><b>場所と鍵を分ける</b><span>どこに何があるかと、ログインのための情報は分けて管理する。情報は漏れることがある、という前提で備える（<a href="../ai/#society">AIと人・社会</a>）。</span></li>
+    </ul>
+  </section>
+
+  <section id="open">
+    <div class="note">
+      <h2>このノートで、まだ確かめていること</h2>
+      <ul>
+        <li>経済的な安心を損なわずに、週3日ほどの働き方をどう実現するか</li>
+        <li>物にお金を使うことと、体験にお金を使うことの、自分にとってのちょうどいい配分は</li>
+        <li>株主優待の中から、自分の暮らしにとっての最適解を整理したい</li>
+        <li>どれくらいあれば、「もう十分」と感じられるのか</li>
+      </ul>
+    </div>
+  </section>
+
+  <section style="border-bottom:none">
+    <h2 style="font-size:1.2rem">このノートの元になったつぶやき</h2>
+    <nav class="src">
+      <a href="../musings/posts/p148.html">振り回されず、自分の意思で<small>2026.10.12</small></a>
+      <a href="../musings/posts/p141.html">欲を消すのではなく、距離を変える<small>2026.09.27</small></a>
+      <a href="../musings/posts/p140.html">望むことと、つかむことを分ける<small>2026.09.26</small></a>
+      <a href="../musings/posts/p114.html">減らすのではなく、使い切る<small>2026.09.09</small></a>
+      <a href="../musings/posts/p086.html">資産の存在を忘れないためのサービス<small>2026.08.25</small></a>
+      <a href="../musings/posts/p073.html">少しだけ、一緒に冒険する<small>2026.08.13</small></a>
+      <a href="../musings/posts/p063.html">欲を否定せず、支配されない<small>2026.08.10</small></a>
+      <a href="../musings/posts/p057.html">普段の生活費から、飛行機に乗る<small>2026.08.09</small></a>
+      <a href="../musings/posts/p054.html">持っているだけでは、価値にならない<small>2026.08.08</small></a>
+    </nav>
+  </section>
+
+  <footer>
+    <p class="related">あわせて読む：<a href="../way-of-life/">生き方</a> ・ <a href="../way-of-working/">働き方</a> ・ <a href="../joy/">楽しみ方</a> ・ <a href="../thinking/">考え方</a></p>
+    <p>専門家ではない個人が、自分のお金との付き合い方を書きとめたノートです。特定の投資や金融商品を勧めるものではなく、内容の正確性を保証するものでもありません。</p>
+    <p><a class="back" href="../">← m-note トップ</a></p>
+  </footer>
+</main>
+</body>
+</html>
